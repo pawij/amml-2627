@@ -340,3 +340,10 @@ for iter in range(max_iters):
 context = torch.zeros((1, 1), dtype=torch.long, device=config.device)
 print("\nFinal generated text:")
 print(decode(model.generate(context, max_len=500)[0].tolist(), int_to_str))
+
+"""**Extension**
+
+Try nanoGPT, a fun ~300 line implementation of a transformer-based LLM!
+
+https://github.com/karpathy/nanogpt
+"""
